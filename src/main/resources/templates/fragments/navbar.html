@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"
-      xmlns:th="http://www.thymeleaf.org"
->
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -9,9 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<!--4,5번 반복-->
-<!--<nav th:replace="~{fragments/navber::navbar}" class="navbar navbar-expand-lg navbar-light bg-light border-bottom">-->
-<nav th:fragments="navber" class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+<!--4, 5번 반복-->
+<!--<nav th:replace="~{fragments/navber::navbar}"-->
+<nav th:fragment="navber" class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
   <div class="container-fluid">
     <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>

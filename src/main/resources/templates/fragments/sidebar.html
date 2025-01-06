@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"
-      xmlns:th="http://www.thymeleaf.org"
->
+      xmlns:th="http://www.thymeleaf.org"> <!--5. xmlns 추가-->
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -10,8 +9,8 @@
 </head>
 <body>
   <!--4. user.html에 2번에 선언한 이름으로 첫 행을 수정-->
-  <!--<div th:replace="~{fragments/sidebar::sidebar}" class="border-end bg-white" id="sidebar-wrapper">-->
-  <div th:fragments="sidebar" class="border-end bg-white" id="sidebar-wrapper">
+  <!--<div th:replace="~{fragments/sidebar::sidebar}"-->
+  <div th:fragment="sidebar" class="border-end bg-white" id="sidebar-wrapper">
     <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
     <div class="list-group list-group-flush">
       <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Dashboard</a>
